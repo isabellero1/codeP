@@ -24,6 +24,9 @@ class Solution {
             let curr = nums[i];
             //difference -> target- curr
             let diff = target-curr;
+
+            //check if the diff exists in the array and if so, 
+            //find the index of that value and return
             if(nums.includes(diff)){
                 let diffInd = nums.indexOf(diff)
                 return[i,diffInd];
